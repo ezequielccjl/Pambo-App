@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+nav{
+    width: 100%;
+    background-color: #ea343c;
+    text-align: initial;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-cont{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-nav{
+    margin-left: 2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    width: 7.5rem;
+}
+
+.ul-nav{
+    color: white;
+    font-family: "Poppins", sans;
+    font-size: 0.8rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    margin-right: 2rem;
+}
+
+.ul-nav > li{
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.ul-nav > li:hover{
+    color: black;
+}
+
+.btn-tienda{
+    background-color: #363435;
+    color: white;
+}
+
+.btn-tienda > i{
+    margin-left: 0.5rem;
+}
+
+.btn-tienda:hover{
+    background-color: #5c595a;
+    color: white;
+}
+
+.nav-menu-resp{
+    display: none;
+    width: 60%;
+}
+
+.height-zero{
+    height: 0;
+}
+
+.hamburguer-menu{
+    display: none;
+    cursor: pointer;
+    margin-right: 2rem;
+
+    width: 35px;
+    height: 30px;
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+
+    transition: all .8s;
+}
+
+.change .line-1{
+    transform: rotateZ(-405deg) translate(-8px, 6px)
+}
+
+.change .line-2{
+    opacity: 0;
+}
+
+.change .line-3{
+    transform: rotateZ(405deg)  translate(-8px, -6px)
+}
+
+/* Clases para Navbar Responsive */
+
+@media only screen and (max-width: 850px) {
+
+    nav{
+        width: 100%;
+    }
+
+    .ul-nav{
+        display: none;
+    }
+
+    .nav-menu-resp{
+        display: block;
+    }
+
+    .hamburguer-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+
+
+.nav-ul-resp{
+    list-style-type: none;
+    color: white;
+    font-family: "Poppins", sans;
+    padding-left: 0;
+}
+
+.nav-ul-resp > li{
+    padding: 0.5rem;
+    background-color: rgb(49, 49, 49);
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}

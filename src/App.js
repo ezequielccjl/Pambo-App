@@ -1,9 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+//Components
+import {Navbar} from './components/Navbar'
+import {WppButton} from './components/WppButton'
+import {Header} from './components/Header'
+
 function App() {
   return (
     <div className="App">
+      <Navbar/>
+      <Header/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,6 +25,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <WppButton />
     </div>
   );
 }
