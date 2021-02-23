@@ -3,8 +3,10 @@ import '../css/wppButton.css'
 
 export const WppButton = () => {
     return (
-        <div className="wpp-btn">
-            <i className="fab fa-whatsapp fa-3x"></i>
-        </div>
+        <a href="https://api.whatsapp.com/send?phone=541168057707&text=" target="_blank">
+            <div className="wpp-btn">
+                <i className="fab fa-whatsapp fa-3x"></i>
+            </div>
+        </a>
     )
 }
