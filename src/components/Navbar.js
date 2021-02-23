@@ -9,6 +9,8 @@ export const Navbar = () =>{
     
     function handlerClick(){
         $(".hamburguer-menu").toggleClass("change")
+        $(".nav-menu-resp").toggleClass("menu-active")
+
     }
     
     useEffect(()=>{
@@ -22,9 +24,6 @@ export const Navbar = () =>{
         }
 
     },[])
-
-    
-
     
 
     return(
