@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import $ from 'jquery'
 import '../css/navbar.css'
 import {NavbarMenu} from './NavbarMenu'
+import {Link} from 'react-router-dom'
 
 import logo from '../imgs/0_Pambo_Logo.png'
 
@@ -33,17 +34,30 @@ export const Navbar = () =>{
                     <img src={logo} className="img-nav"></img>
                 </div>
                 <ul className="ul-nav  text-center">
-                    <li>EDUCACIÓN</li>
-                    <li>DEPORTES</li>
-                    <li>NUESTRO EQUIPO</li>
-                    <li>TESTIMONIOS</li>
-                    <li>CONTACTO</li>
-                    <li>
-                        <button className="btn btn-tienda">
-                            Tienda
-                            <i className="fas fa-shopping-cart"></i>
-                        </button>
-                    </li>
+                    <Link to="/">
+                        <li>EDUCACIÓN</li>
+                    </Link>
+                    <Link to="/">
+                        <li>DEPORTES</li>
+                    </Link>
+                    <Link to="/">
+                        <li>NUESTRO EQUIPO</li>
+                    </Link>
+                    <Link to="/">
+                        <li>TESTIMONIOS</li>
+                    </Link>
+                    <Link to="/contacto">
+                        <li>CONTACTO</li>
+                    </Link>
+
+                    <Link to="/">
+                        <li>
+                            <button className="btn btn-tienda">
+                                Tienda
+                                <i className="fas fa-shopping-cart"></i>
+                            </button>
+                        </li>
+                    </Link>
                 </ul>
 
                 <div className="hamburguer-menu">

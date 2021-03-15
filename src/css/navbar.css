@@ -43,13 +43,13 @@ nav{
     margin-right: 2rem;
 }
 
-.ul-nav > li{
+.ul-nav > a{
     margin-left: 2rem;
     cursor: pointer;
     transition: .2s ease-in-out;
 }
 
-.ul-nav > li:hover{
+.ul-nav > a:hover{
     color: black;
 }
 

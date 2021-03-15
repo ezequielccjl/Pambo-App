@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 .cont-video{
     padding-top: 5rem;
@@ -8,6 +8,28 @@
     width: 100%;
 }
 
+.perrito_escuela{
+    width: 35rem;
+}
+
+.cont_text_escuela{
+    text-align: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 14rem;
+
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: -5rem;
+}
+
+.cont_img_escuela{
+    display: flex;
+    justify-content: initial;
+}
 
 @media only screen and (max-width: 850px){
     

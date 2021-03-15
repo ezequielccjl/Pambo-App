@@ -41,3 +41,18 @@
     transform: rotate(360deg);
   }
 }
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.row{
+  padding: 0;
+  margin: 0;
+}
+
+.row>*{
+  padding: 0;
+  margin: 0;
+}

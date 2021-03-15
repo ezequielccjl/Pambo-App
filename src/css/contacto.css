@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+.cont_contacto{
+    padding-top: 8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.row_info{
+    padding-top: 4rem;
+    background-color: #fff;
+}
+
+.info_consulta{
+    text-align: initial;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6rem;
+}
+
+.info_consulta > div > div{
+    margin-bottom: 1rem;
+}
+
+.span_info{
+    font-weight: 300;
+    color: black;
+    margin-left: 0.5rem;
+}
+
+.titulo_esperamos{
+    font-size: 2.2rem;
+}
+
+.img_info img{
+    margin-right: 0.5rem;
+}
+
+.mapa{
+    width: 80%;
+    height: 60vh;
+}
+
+@media only screen and (max-width: 850px){
+    .cont_contacto{
+        padding-top: 5.5rem;
+    }
+
+    .info_info_consulta{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .mapa{
+        margin-top: 2rem;
+        width: 100%;
+    }
+}
