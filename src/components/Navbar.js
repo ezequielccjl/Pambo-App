@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import $ from 'jquery'
 import '../css/navbar.css'
 import {NavbarMenu} from './NavbarMenu'
 import {Link} from 'react-router-dom'
@@ -9,8 +8,8 @@ import logo from '../imgs/0_Pambo_Logo.png'
 export const Navbar = () =>{
     
     function handlerClick(){
-        $(".hamburguer-menu").toggleClass("change")
-        $(".nav-menu-resp").toggleClass("menu-active")
+        document.querySelector(".hamburguer-menu").classList.toggle("change")
+        document.querySelector(".nav-menu-resp").classList.toggle("menu-active")
 
     }
     

@@ -2,11 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 //Components
-import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
 import {Navbar} from './components/Navbar'
 import {WppButton} from './components/WppButton'
-import {Header} from './components/Header'
+import {Landing} from './components/Landing'
 import {Contacto} from './components/Contacto'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
 
         <Switch>
           <Route exact path="/">
-            <Header />
+            <Landing />
           </Route>
 
           <Route path="/contacto">

@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.main_cont{
+    width: 100%;
+}
 
 .cont-video{
     padding-top: 5rem;
@@ -9,7 +13,10 @@
 }
 
 .perrito_escuela{
-    width: 35rem;
+    width: 75%;
+}
+
+.escuela_lider{
 }
 
 .cont_text_escuela{
@@ -18,19 +25,168 @@
     justify-content: center;
     align-items: center;
 
-    padding-left: 14rem;
-
+    padding-left: 20%;
     font-size: 3rem;
+
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    margin-top: -5rem;
+    z-index: 1;
 }
 
 .cont_img_escuela{
+    margin-top: -1rem;
     display: flex;
     justify-content: initial;
 }
+.section_deportes{
+}
 
-@media only screen and (max-width: 850px){
-    
+.titulo_section{
+    width: 100%;
+    background-color: #EE1F2D;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.cont_habilidades{
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: initial;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.cont_texto_hab div:last-child{
+    margin-top: 1rem;
+}
+
+.titulo_habilidades{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.cont_btn_hab{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn_leer_mas{
+    color: #EE1F2D;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #EE1F2D;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 3rem;
+}
+
+.section_edu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row_cursos{
+    width: 80%;
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cont_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+
+}
+
+.card_cursos{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+
+    width: 90%;
+}
+
+.img_curso{
+    width: 50%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.nombre_curso{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1460px){
+    .cont_habilidades{
+        padding-left: 2rem;
+        padding-right: 2rem;   
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .cont_habilidades{
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .row_cursos div:last-child{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .cont_text_escuela{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .cont_text_escuela{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        padding-left: 15%;
+        padding-right: 15%;
+        text-align: center;
+    }
+
+    .cont_img_escuela{
+        display: flex;
+        justify-content: center;
+    }
+
+    .row_cursos div:last-child{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 568px){
+    .cont_text_escuela{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
