@@ -21,6 +21,7 @@ export const Landing =  ()=> {
         <div className="main_cont">
             <div className="cont-video">
             {/* <video src={landing} loop muted preload="auto" autoPlay className="video-land"></video> */}
+            <iframe className="video-land" src="https://www.youtube.com/embed/tdGqTaHSF4o?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
 
             <div className="escuela_lider row">
@@ -71,6 +72,7 @@ export const Landing =  ()=> {
                 <div className="row">
                     <div className="col-xl-6 col-md-12 col-sm-12">
                         {/* <video src={habilidades} loop muted preload="auto" autoPlay className="video-land"></video> */}
+                        <iframe className="video-land" src="https://www.youtube.com/embed/QWmVgwO2O7M?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <div className="col-xl-6 col-md-12 col-sm-12 cont_habilidades">
                         <div className="titulo_habilidades">Habilidades</div>
@@ -101,3 +103,4 @@ export const Landing =  ()=> {
         </div>
     )
 }
+

@@ -5,11 +5,21 @@
 }
 
 .cont-video{
-    padding-top: 5rem;
+    padding-top: 8rem;
 }
 
 .video-land{
     width: 100%;
+    height: 70vh;
+}
+
+.section_deportes .video-land{
+    height: 50vh;
+}
+
+.video-stream{
+    width: 100% !important;
+    height: 200vh !important;
 }
 
 .perrito_escuela{
@@ -38,8 +48,7 @@
     display: flex;
     justify-content: initial;
 }
-.section_deportes{
-}
+
 
 .titulo_section{
     width: 100%;
@@ -162,6 +171,16 @@
 @media only screen and (max-width: 1000px){
     .cont_text_escuela{
         font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .cont-video{
+        padding-top: 5.5rem;
+    }
+
+    .video-land{
+        height: 35vh;
     }
 }
 
