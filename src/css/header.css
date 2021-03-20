@@ -26,9 +26,6 @@
     width: 75%;
 }
 
-.escuela_lider{
-}
-
 .cont_text_escuela{
     text-align: initial;
     display: flex;
@@ -150,10 +147,70 @@
     margin-bottom: 2rem;
 }
 
+.numeros{
+    margin-top: -0.5rem;
+}
+
+.cont_numeros{
+    height: 100%;
+
+    padding-right: 5rem;
+    padding-left: 5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cont_card_uno{
+    grid-row: 1/3;
+}
+
+.cont_card_dos{
+    margin-top: 1rem;
+}
+
+.img_num{
+    width: 100%;
+}
+
+.cont-card-num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-num{
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 2rem;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+.tarjeta-num .img_curso{
+    width: 55%;
+}
+
+.num-card{
+    font-size: 3rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
 @media only screen and (max-width: 1460px){
     .cont_habilidades{
         padding-left: 2rem;
         padding-right: 2rem;   
+    }
+}
+
+@media only screen and (max-width: 1240px){
+    .tarjeta-num{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
@@ -166,6 +223,30 @@
     .row_cursos div:last-child{
         margin-top: 0;
     }
+
+    .tarjeta-num{
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .cont_numeros{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .cont_numeros{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cont_card_uno{
+        grid-row: 1/2;
+    }
+
+    .cont_card_dos{
+        margin-top: 0;
+    }
+
 }
 
 @media only screen and (max-width: 1000px){
@@ -180,6 +261,10 @@
     }
 
     .video-land{
+        height: 35vh;
+    }
+
+    .section_deportes .video-land{
         height: 35vh;
     }
 }
@@ -201,11 +286,29 @@
     .row_cursos div:last-child{
         margin-top: 0;
     }
+
+    .cont_grid{
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
 }
 
 @media only screen and (max-width: 568px){
     .cont_text_escuela{
         padding-left: 10%;
         padding-right: 10%;
+    }
+
+    .cont_numeros{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-num{
+        width: 60%;
+    }
+
+    .cont-card-num{
+        margin-bottom: 2rem;
     }
 }

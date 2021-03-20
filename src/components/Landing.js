@@ -4,23 +4,19 @@ import img from '../imgs/perrito-escuela.jpeg'
 
 import {Footer} from './Footer'
 
-//import habilidades from '../videos/habilidades.mp4'
-//import landing from '../videos/institucional.mp4'
 import perrito1 from '../imgs/perrito-1.jpg'
 import perrito2 from '../imgs/perrito-2.jpg'
 import perrito3 from '../imgs/perrito-3.jpg'
+import nnumeros from '../imgs/nuestros-numeros.jpeg'
 
 import '../css/header.css'
 
-
-//<video src={landing} loop muted preload="auto" className="video-land"></video>
 
 export const Landing =  ()=> {
     
     return(
         <div className="main_cont">
             <div className="cont-video">
-            {/* <video src={landing} loop muted preload="auto" autoPlay className="video-land"></video> */}
             <iframe className="video-land" src="https://www.youtube.com/embed/tdGqTaHSF4o?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
 
@@ -41,6 +37,15 @@ export const Landing =  ()=> {
                     <div className="col-xl-4 col-md-6 col-sm-12 cont_card">
                         <div className="card_cursos">
                             <div className="div_img">
+                                <img src={perrito3} className="img_curso"></img>
+                            </div>
+                            <div className="nombre_curso">Cursos individuales</div>
+                            <button className="btn_leer_mas">Leer más</button>
+                        </div>
+                    </div>
+                    <div className="col-xl-4 col-md-6 col-sm-12 cont_card">
+                        <div className="card_cursos">
+                            <div className="div_img">
                                 <img src={perrito1} className="img_curso"></img>
                             </div>
                             <div className="nombre_curso">Cursos individuales</div>
@@ -56,22 +61,12 @@ export const Landing =  ()=> {
                             <button className="btn_leer_mas">Leer más</button>
                         </div>
                     </div>
-                    <div className="col-xl-4 col-md-6 col-sm-12 cont_card">
-                        <div className="card_cursos">
-                            <div className="div_img">
-                                <img src={perrito3} className="img_curso"></img>
-                            </div>
-                            <div className="nombre_curso">Cursos individuales</div>
-                            <button className="btn_leer_mas">Leer más</button>
-                        </div>
-                    </div>
                 </div>
             </section>
             <section className="section_deportes">
                 <div className="titulo_section">Deportes</div>
                 <div className="row">
                     <div className="col-xl-6 col-md-12 col-sm-12">
-                        {/* <video src={habilidades} loop muted preload="auto" autoPlay className="video-land"></video> */}
                         <iframe className="video-land" src="https://www.youtube.com/embed/QWmVgwO2O7M?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <div className="col-xl-6 col-md-12 col-sm-12 cont_habilidades">
@@ -91,12 +86,39 @@ export const Landing =  ()=> {
                     </div>
                 </div>
             </section>
-            <section>
-                <div className="titulo_section">Nuestro números hablan</div>
+            <section className="section_numeros">
+                <div className="titulo_section numeros">Nuestro números hablan</div>
                 <div className="row">
-                    <div className="col-8">
+                    <div className="col-xl-8 col-md-8 col-sm-12 cont_grid">
+
+                        <div className="cont_numeros">
+                            <div className="cont-card-num cont_card_uno">
+                                <div className="tarjeta-num">
+                                    <img src={perrito3} alt="perrito3" className="img_curso"></img>
+                                    <div className="num-card">0</div>
+                                    <div className="titulo-card">Amor y diversión</div>
+                                </div>
+                            </div>
+                            <div className="cont-card-num cont_card_dos">
+                                <div className="tarjeta-num">
+                                    <img src={perrito1} alt="perrito1" className="img_curso"></img>
+                                    <div className="num-card">0</div>
+                                    <div className="titulo-card">Perros educados</div>
+                                </div>
+                            </div>
+                            <div className="cont-card-num cont_card_tres">
+                                <div className="tarjeta-num">
+                                    <img src={perrito2} alt="perrito2" className="img_curso"></img>
+                                    <div className="num-card">0</div>
+                                    <div className="titulo-card">Familias felices</div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div className="col-4"></div>
+                    <div className="col-xl-4 col-md-4 col-sm-12 cont_img_num">
+                        <img src={nnumeros} alt="nnumeros" className="img_num"></img>
+                    </div>
                 </div>
             </section>
             <Footer />
