@@ -10,7 +10,6 @@ export const Navbar = () =>{
     function handlerClick(){
         document.querySelector(".hamburguer-menu").classList.toggle("change")
         document.querySelector(".nav-menu-resp").classList.toggle("menu-active")
-
     }
     
     useEffect(()=>{
@@ -30,7 +29,9 @@ export const Navbar = () =>{
         <div className="navbar-cont">
             <nav>
                 <div className="div-img-nav">
-                    <img src={logo} className="img-nav"></img>
+                    <Link to="/">
+                        <img src={logo} className="img-nav"></img>
+                    </Link>
                 </div>
                 <ul className="ul-nav  text-center">
                     <Link to="/">
@@ -65,7 +66,7 @@ export const Navbar = () =>{
                     <div className="line line-3"></div>
                 </div>
             </nav>
-            <NavbarMenu/>
+            <NavbarMenu  handlerClick={handlerClick}/>
         </div>
     )
 }

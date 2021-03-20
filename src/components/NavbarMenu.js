@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
 
-export const NavbarMenu = () => {
+export const NavbarMenu = ({handlerClick}) => {
 
     
 
@@ -9,33 +9,33 @@ export const NavbarMenu = () => {
         <div className="nav-menu-resp">
             <ul className="nav-ul-resp">
                 <li>
-                    <Link to="/">
-                        TIENDA
+                    <Link to="/">    
+                        <div onClick={handlerClick}>TIENDA</div>
                     </Link>
                 </li>
                 <li>
                     <Link to="/">
-                        EDUCACIÓN
+                        <div onClick={handlerClick}>EDUCACIÓN</div>
                     </Link>
                 </li>
                 <li>
                     <Link to="/">
-                        DEPORTES
+                        <div onClick={handlerClick}>DEPORTES</div>
                     </Link>
                 </li>
                 <li>
                     <Link to="/">
-                        NUESTRO EQUIPO
+                        <div onClick={handlerClick}>NUESTRO EQUIPO</div>
                     </Link>
                 </li>
                 <li>
                     <Link to="/">
-                        TESTIMONIOS
+                        <div onClick={handlerClick}>TESTIMONIOS</div>
                     </Link>
                 </li>
                 <li>
                     <Link to="/contacto">
-                        CONTACTO
+                        <div onClick={handlerClick}>CONTACTO</div>
                     </Link>
                 </li>
             </ul>

@@ -24,8 +24,8 @@ export const Contacto = () => {
                         <div>
                             Teléfono:<span className="span_info">011- 6805-7707</span>
                         </div>
-                        <div>
-                            E-mail:<span className="span_info">adiestramientopambo@gmail.com</span>
+                        <div className="email_contacto">
+                            Email: <span className="span_info">adiestramientopambo@gmail.com</span>
                         </div>
                         <div className="img_info">
                             <img src={iconfb} alt="icon-fb"></img>
