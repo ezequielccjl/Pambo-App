@@ -8,6 +8,7 @@ import {Navbar} from './components/Navbar'
 import {WppButton} from './components/WppButton'
 import {Landing} from './components/Landing'
 import {Contacto} from './components/Contacto'
+import {Cursos} from './components/Cursos'
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
 
           <Route path="/contacto">
             <Contacto />
+          </Route>
+
+          <Route path="/cursos/:categoriaCurso">
+            <Cursos />
           </Route>
         </Switch>
       </BrowserRouter>

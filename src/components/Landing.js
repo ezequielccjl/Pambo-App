@@ -3,6 +3,7 @@ import React from 'react'
 import img from '../imgs/perrito-escuela.jpeg'
 
 import {Footer} from './Footer'
+import {Link} from 'react-router-dom'
 
 import perrito1 from '../imgs/perrito-1.jpg'
 import perrito2 from '../imgs/perrito-2.jpg'
@@ -40,7 +41,9 @@ export const Landing =  ()=> {
                                 <img src={perrito3} className="img_curso"></img>
                             </div>
                             <div className="nombre_curso">Cursos individuales</div>
-                            <button className="btn_leer_mas">Leer más</button>
+                            <Link to="/cursos/individuales">
+                                <button className="btn_leer_mas">Leer más</button>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-xl-4 col-md-6 col-sm-12 cont_card">
@@ -48,8 +51,10 @@ export const Landing =  ()=> {
                             <div className="div_img">
                                 <img src={perrito1} className="img_curso"></img>
                             </div>
-                            <div className="nombre_curso">Cursos individuales</div>
-                            <button className="btn_leer_mas">Leer más</button>
+                            <div className="nombre_curso">Cursos grupales</div>
+                            <Link to="/cursos/grupales">
+                                <button className="btn_leer_mas">Leer más</button>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-xl-4 col-md-6 col-sm-12 cont_card">
@@ -57,8 +62,10 @@ export const Landing =  ()=> {
                             <div className="div_img">
                                 <img src={perrito2} className="img_curso"></img>
                             </div>
-                            <div className="nombre_curso">Cursos individuales</div>
-                            <button className="btn_leer_mas">Leer más</button>
+                            <div className="nombre_curso">Masterclass</div>
+                            <Link to="/cursos/masterclass">
+                                <button className="btn_leer_mas">Leer más</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

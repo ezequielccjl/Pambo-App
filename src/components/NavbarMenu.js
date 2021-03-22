@@ -15,7 +15,12 @@ export const NavbarMenu = ({handlerClick}) => {
                 </li>
                 <li>
                     <Link to="/">
-                        <div onClick={handlerClick}>EDUCACIÓN</div>
+                        <div onClick={handlerClick}>¿POR QUÉ EDUCAR A TU MASCOTA?</div>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/cursos/individuales">
+                        <div onClick={handlerClick}>CURSOS</div>
                     </Link>
                 </li>
                 <li>
@@ -25,7 +30,7 @@ export const NavbarMenu = ({handlerClick}) => {
                 </li>
                 <li>
                     <Link to="/">
-                        <div onClick={handlerClick}>NUESTRO EQUIPO</div>
+                        <div onClick={handlerClick}>NUESTRA HISTORIA</div>
                     </Link>
                 </li>
                 <li>

@@ -1,0 +1,70 @@
+
+.section_cursos{
+    padding-top: 8rem;
+}
+
+.nav_cursos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: rgba(165, 42, 42, 0.404);
+}
+
+.curso_btn{
+    padding: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.nav_cursos .curso_btn{
+    border-left: 2px solid white;
+}
+
+.cont_curso{
+    margin-bottom: 5rem;
+}
+
+.cont_curso{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.cont_info_curso{
+    text-align: initial;
+}
+
+.titulo_curso{
+    margin-top: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.subtitulo_curso{
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.cont_texto{
+    margin-top: 1.5rem;
+}
+
+.programa{
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.titulo_programa{
+    margin-bottom: 1.5rem;
+}
+
+.foto_curso{
+    position: fixed;
+    width: 20%;
+}
+
+@media (max-width: 850px){
+    .section_cursos{
+        padding-top: 5.5rem;
+    }
+}
