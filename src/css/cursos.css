@@ -15,18 +15,15 @@
     font-size: 1.1rem;
     font-weight: 600;
     color: white;
+    border-right: 1px white solid;
+}
+
+.ultimo_curso_btn{
+    border: none;
 }
 
 .curso_pintado{
     background-color: #f14c57;
-}
-
-.nav_cursos .curso_btn{
-    border-left: 2px solid white;
-}
-
-.nav_cursos:first-child div{
-    border-left: none;
 }
 
 .cont_curso{
@@ -88,5 +85,18 @@ vertical-align: -0.125em;
 @media (max-width: 850px){
     .section_cursos{
         padding-top: 5.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .nav_cursos{
+        grid-template-columns: 1fr;
+    }
+
+    .curso_btn{
+        padding: 1rem;
+        border-right: none;
+        border-bottom: 1px white solid;
+
     }
 }

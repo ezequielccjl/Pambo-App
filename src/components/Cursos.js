@@ -63,7 +63,7 @@ export const Cursos = () => {
                     <div className="curso_btn gru">Cursos grupales</div>
                 </Link>
                 <Link to="/cursos/masterclass">
-                    <div className="curso_btn mas">Masterclass</div>
+                    <div className="curso_btn ultimo_curso_btn mas">Masterclass</div>
                 </Link>
             </div>
             {
