@@ -6,7 +6,8 @@
 .nav_cursos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background: rgba(165, 42, 42, 0.404);
+    background: #D28282;
+    border-top: 2px solid white;
 }
 
 .curso_btn{
@@ -16,8 +17,16 @@
     color: white;
 }
 
+.curso_pintado{
+    background-color: #f14c57;
+}
+
 .nav_cursos .curso_btn{
     border-left: 2px solid white;
+}
+
+.nav_cursos:first-child div{
+    border-left: none;
 }
 
 .cont_curso{
@@ -61,6 +70,19 @@
 .foto_curso{
     position: fixed;
     width: 20%;
+}
+
+.footer_mc{
+    font-weight: 600;
+}
+
+.huella{
+    content: url('https://api.iconify.design/mdi:paw.svg?height=24');
+vertical-align: -0.125em;
+}
+
+.cont_educar{
+    padding-top: 10rem;
 }
 
 @media (max-width: 850px){

@@ -4,7 +4,7 @@ import '../css/cursos.css'
 
 import foto from '../imgs/perrito-curso1.jpeg'
 
-export const CursosInd = () => {
+export const CursosInd = ({handlerPintarCurso}) => {
     return(
         <div>
         <div className="cont_curso row">

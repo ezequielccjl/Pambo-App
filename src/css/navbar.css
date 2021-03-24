@@ -50,7 +50,8 @@ nav{
 }
 
 .ul-nav > a:hover{
-    color: black;
+    font-weight: 600;
+    color: white;
 }
 
 .btn-tienda{

@@ -1,0 +1,29 @@
+.section_testimonios{
+    padding-top: 8rem;
+}
+
+.iframe_testimonios{
+    height: 80vh;
+    width: 100%;
+}
+
+.cont_carousel{
+    height: 70vh;
+    background-color: burlywood;
+}
+
+@media (max-width: 850px){
+    .section_testimonios{
+        padding-top: 5.5rem;
+    }
+
+    .iframe_testimonios{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 500px){
+    .iframe_testimonios{
+        height: 30vh;
+    }
+}

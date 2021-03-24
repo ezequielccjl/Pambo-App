@@ -9,12 +9,12 @@ export const NavbarMenu = ({handlerClick}) => {
         <div className="nav-menu-resp">
             <ul className="nav-ul-resp">
                 <li>
-                    <Link to="/">    
+                    <Link to="/tienda">    
                         <div onClick={handlerClick}>TIENDA</div>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/">
+                    <Link to="/educar">
                         <div onClick={handlerClick}>¿POR QUÉ EDUCAR A TU MASCOTA?</div>
                     </Link>
                 </li>
@@ -24,17 +24,17 @@ export const NavbarMenu = ({handlerClick}) => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/">
+                    <Link to="/deportes">
                         <div onClick={handlerClick}>DEPORTES</div>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/">
+                    <Link to="/historia">
                         <div onClick={handlerClick}>NUESTRA HISTORIA</div>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/">
+                    <Link to="/testimonios">
                         <div onClick={handlerClick}>TESTIMONIOS</div>
                     </Link>
                 </li>
