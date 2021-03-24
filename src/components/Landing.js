@@ -2,6 +2,7 @@ import React from 'react'
 
 import img from '../imgs/perrito-escuela.jpeg'
 
+import {ModalLand} from './ModalLand'
 import {Footer} from './Footer'
 import {Link} from 'react-router-dom'
 
@@ -17,6 +18,9 @@ export const Landing =  ()=> {
     
     return(
         <div className="main_cont">
+            
+            <ModalLand />
+
             <div className="cont-video">
             <iframe className="video-land" src="https://www.youtube.com/embed/tdGqTaHSF4o?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
