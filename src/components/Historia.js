@@ -44,8 +44,6 @@ export const Historia = () => {
                     
                 </div>
             </div>
-
-            <Footer />
         
         </section>
                     

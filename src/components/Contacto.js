@@ -49,7 +49,6 @@ export const Contacto = () => {
                 </div>
             </div>
 
-            <Footer />
 
         </section>
     )

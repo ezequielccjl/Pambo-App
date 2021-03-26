@@ -15,7 +15,7 @@ export const ModalLand = () => {
             <div className="titulo_modal">¿Ya te suscribiste a nuestro newsletter?</div>
             <div className="sub_modal">Suscribite y enterate de todas nuestras novedades al instante</div>
             <div className="cont_input">
-                <label for="input">Email: <span className="asterisco">*</span></label>
+                <label htmlFor="input">Email: <span className="asterisco">*</span></label>
                 <input id="input"></input>
                 <div className="cont_btn_modal">
                     <button className="btn_sus">SUSCRIBIRME!</button>

@@ -95,13 +95,12 @@ export const CursosInd = ({handlerPintarCurso}) => {
             </div>
 
             <div className="cont_img_curso col-xl-5 col-md-5 col-sm-12">
-                {/* <img className="foto_curso" src={foto} alt="fotoperrito"></img> */}
+                <img className="foto_curso" src={foto} alt="fotoperrito"></img>
             </div>
 
 
 
         </div>
-        <Footer />
         </div>
     )
 }

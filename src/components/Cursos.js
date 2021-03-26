@@ -57,13 +57,13 @@ export const Cursos = () => {
         <section className="section_cursos">
             <div className="nav_cursos">
                 <Link to="/cursos/individuales">
-                    <div className="curso_btn ind">Cursos individuales</div>
+                    <div className= {`curso_btn ind ${categoriaCurso==="individuales" && "curso_pintado"}`}>Cursos individuales</div>
                 </Link>
                 <Link to="/cursos/grupales">
-                    <div className="curso_btn gru">Cursos grupales</div>
+                    <div className={`curso_btn gru ${categoriaCurso==="grupales" && "curso_pintado"}`}>Cursos grupales</div>
                 </Link>
                 <Link to="/cursos/masterclass">
-                    <div className="curso_btn ultimo_curso_btn mas">Masterclass</div>
+                    <div className={`curso_btn ultimo_curso_btn mas ${categoriaCurso==="masterclass" && "curso_pintado"}`}>Masterclass</div>
                 </Link>
             </div>
             {

@@ -6,6 +6,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
 import {Navbar} from './components/Navbar'
 import {WppButton} from './components/WppButton'
+import {Footer} from './components/Footer'
 import {Landing} from './components/Landing'
 import {Contacto} from './components/Contacto'
 import {Cursos} from './components/Cursos'
@@ -55,6 +56,7 @@ function App() {
             <Cursos />
           </Route>
         </Switch>
+        <Footer />
       </BrowserRouter>
     </div>
   );

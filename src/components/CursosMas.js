@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/cursos.css'
-import foto from '../imgs/perrito-curso2.jpeg'
+import foto from '../imgs/perrito-curso3.jpeg'
 import huella from '../icons/huella.png'
 
 export const CursosMas = () => {
@@ -61,6 +61,10 @@ export const CursosMas = () => {
                         <div className="texto"> Cada parte de sus planes de estudios están perfectamente pensados para que logres obtener un perrito 100% educado, avanzado, estimulado, divertido, y sociabilizado. </div>
                     </div>
                 
+                </div>
+
+                <div className="cont_img_curso col-xl-5 col-md-5 col-sm-12">
+                    <img className="foto_curso" src={foto} alt="fotoperrito"></img>
                 </div>
             </div>
         </div>

@@ -67,7 +67,7 @@ export const Educar = () => {
                     
                 </div>
             </div>
-            <Footer />
+            
         </section>
     )
 }
