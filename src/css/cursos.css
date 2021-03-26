@@ -16,14 +16,20 @@
     font-weight: 600;
     color: white;
     border-right: 1px white solid;
+
+    transition: .3s ease-in-out;
 }
 
 .ultimo_curso_btn{
     border: none;
 }
 
+.curso_btn:hover{
+    background-color: #f07079;
+}
+
 .curso_pintado{
-    background-color: #f14c57;
+    background-color: #f14c57 !important;
 }
 
 .cont_curso{

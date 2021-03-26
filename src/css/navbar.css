@@ -29,13 +29,14 @@ nav{
 }
 
 .ul-nav{
+    width: 60%;
     color: white;
     font-family: "Poppins", sans;
     font-size: 0.8rem;
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     padding: 0;
@@ -43,20 +44,24 @@ nav{
     margin-right: 2rem;
 }
 
-.ul-nav > a{
-    margin-left: 2rem;
-    cursor: pointer;
-    transition: .2s ease-in-out;
+.ul-nav a{
+    color: white;
 }
 
-.ul-nav > a:hover{
+.li_nav{
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.li_nav:hover{
     font-weight: 600;
-    color: white;
 }
 
 .btn-tienda{
     background-color: #363435;
     color: white;
+    transition: .4s ease-in-out;
 }
 
 .btn-tienda > i{
@@ -64,8 +69,8 @@ nav{
 }
 
 .btn-tienda:hover{
-    background-color: #5c595a;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 /* Menú Nav Responsive  */

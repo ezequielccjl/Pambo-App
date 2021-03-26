@@ -35,22 +35,22 @@ export const Navbar = () =>{
                 </div>
                 <ul className="ul-nav  text-center">
                     <Link to="/educar">
-                        <li>¿POR QUÉ EDUCAR A TU MASCOTA?</li>
+                        <li className="li_nav">¿POR QUÉ EDUCAR A TU MASCOTA?</li>
                     </Link>
                     <Link to="/cursos/individuales">
-                        <li>CURSOS</li>
+                        <li className="li_nav">CURSOS</li>
                     </Link>
                     <Link to="/deportes">
-                        <li>DEPORTES</li>
+                        <li className="li_nav">DEPORTES</li>
                     </Link>
                     <Link to="/historia">
-                        <li>NUESTRA HISTORIA</li>
+                        <li className="li_nav">NUESTRA HISTORIA</li>
                     </Link>
                     <Link to="/testimonios">
-                        <li>TESTIMONIOS</li>
+                        <li className="li_nav">TESTIMONIOS</li>
                     </Link>
                     <Link to="/contacto">
-                        <li>CONTACTO</li>
+                        <li className="li_nav">CONTACTO</li>
                     </Link>
 
                     <Link to="/tienda">

@@ -40,7 +40,8 @@ export const Testimonios = () => {
                                     </div>
                                     <div className="un_testi">
                                         <div className="cont_texto_testi">
-                                            
+                                            <div>El aporte de Pambo en el adiestramiento de mi perro fue enorme.</div>
+                                            <div>Son muy responsables y dedicados en la educación de las mascotas y de sus dueños también. Superó mis expectativas de sobre manera. Los recomiendo. Una genia Yani.</div>
                                         </div>
                                         <div className="usuario_testi">
                                             <div className="nombre_user">Valeria Bronstein</div>
@@ -69,6 +70,32 @@ export const Testimonios = () => {
                                         </div>
                                         <div className="usuario_testi">
                                             <div className="nombre_user">Laura Bustos</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="carousel-item" data-bs-interval="10000">
+
+                            <div className="cont_testimonio">
+                                <div className="cont_mensajes">
+                                    <div className="un_testi">
+                                        <div className="cont_texto_testi">
+                                            <div>Milo enloqueció en cuarentena, no comía si no le dabas en la boca, ladraba mientras haciamos zoom por trabajo y muchas cosas más. Nos tocó Gi como adiestradora y en la primer semana pudimos ver los avances de Milo. 4 meses después Milo es más feliz, hace caso y nosotros estamos mucho más tranquilos. Pambo es el mejor lugar!</div>
+                                        </div>
+                                        <div className="usuario_testi">
+                                            <div className="nombre_user">Ana Laura La Porta</div>
+                                        </div>
+                                    </div>
+                                    <div className="un_testi">
+                                        <div className="cont_texto_testi">
+                                            <div>El servicio es excelente... Nuestra mascota sufría de ansiedad cuando salíamos al trabajo y nos destrozaba muebles y almohadones. Gracias a las actividades propuestas logramos mejorar la comunicación con nuestra mascota y logramos volver a tener un living con muebles sanos. Además aprendimos mucho.</div>
+                                            <div>Etenernamente agradecidos.</div>
+                                        </div>
+                                        <div className="usuario_testi">
+                                            <div className="nombre_user">Javier Clerici</div>
                                         </div>
                                     </div>
                                 </div>

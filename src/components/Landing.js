@@ -3,13 +3,12 @@ import React from 'react'
 import img from '../imgs/perrito-escuela.jpeg'
 
 import {ModalLand} from './ModalLand'
-import {Footer} from './Footer'
+import {CardsCont} from './CardsCont'
 import {Link} from 'react-router-dom'
 
 import perrito1 from '../imgs/perrito-1.jpg'
 import perrito2 from '../imgs/perrito-2.jpg'
 import perrito3 from '../imgs/perrito-3.jpg'
-import nnumeros from '../imgs/nuestros-numeros.jpeg'
 
 import '../css/header.css'
 
@@ -92,45 +91,16 @@ export const Landing =  ()=> {
                         </div>
                         
                         <div className="cont_btn_hab">
-                            <button className="btn_leer_mas">Leer más</button>
+                            <Link to="/deportes">
+                                <button className="btn_leer_mas">Leer más</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
             </section>
             <section className="section_numeros">
                 <div className="titulo_section numeros">Nuestro números hablan</div>
-                <div className="row">
-                    <div className="col-xl-8 col-md-8 col-sm-12 cont_grid">
-
-                        <div className="cont_numeros">
-                            <div className="cont-card-num cont_card_uno">
-                                <div className="tarjeta-num">
-                                    <img src={perrito3} alt="perrito3" className="img_curso"></img>
-                                    <div className="num-card">0</div>
-                                    <div className="titulo-card">Amor y diversión</div>
-                                </div>
-                            </div>
-                            <div className="cont-card-num cont_card_dos">
-                                <div className="tarjeta-num">
-                                    <img src={perrito1} alt="perrito1" className="img_curso"></img>
-                                    <div className="num-card">0</div>
-                                    <div className="titulo-card">Perros educados</div>
-                                </div>
-                            </div>
-                            <div className="cont-card-num cont_card_tres">
-                                <div className="tarjeta-num">
-                                    <img src={perrito2} alt="perrito2" className="img_curso"></img>
-                                    <div className="num-card">0</div>
-                                    <div className="titulo-card">Familias felices</div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className="col-xl-4 col-md-4 col-sm-12 cont_img_num">
-                        <img src={nnumeros} alt="nnumeros" className="img_num"></img>
-                    </div>
-                </div>
+                <CardsCont />
             </section>
         </div>
     )

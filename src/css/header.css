@@ -69,6 +69,11 @@
     padding-right: 8rem;
 }
 
+.cont_habilidades:hover .btn_leer_mas{
+    background-color: #EE1F2D;
+    color: white;
+}
+
 .cont_texto_hab div:last-child{
     margin-top: 1rem;
 }
@@ -95,6 +100,8 @@
     padding-left: 3rem;
     padding-right: 3rem;
     border-radius: 3rem;
+
+    transition: .3s ease-in-out;
 }
 
 .section_edu{
@@ -124,12 +131,21 @@
 .card_cursos{
     padding-top: 3rem;
     padding-bottom: 3rem;
-    border-radius: 2rem;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
+    border-radius: 2rem;    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 16px rgba(165, 177, 198, 0.8), -8px -8px 16px rgba(255, 255, 255, 0.8);
 
     width: 90%;
+    transition: .3s ease-in-out;
+}
+
+.card_cursos:hover{
+    background-color: #FDE9EA;
+}
+
+.card_cursos:hover .btn_leer_mas{
+    background-color: #EE1F2D;
+    color: white;
 }
 
 .img_curso{
@@ -177,11 +193,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.tarjeta-num:hover{
+    transform: scale(1.05);
+    background-color: #f070792a;
 }
 
 .tarjeta-num{
     width: 60%;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 2rem;
     font-family: "Poppins";
     font-weight: 600;
@@ -189,6 +211,10 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-bottom: 1rem;
+
+    box-shadow: 8px 8px 16px rgba(165, 177, 198, 0.8), -8px -8px 16px rgba(255, 255, 255, 0.8);
+    transition: .4s ease-in-out;
+
 }
 .tarjeta-num .img_curso{
     width: 55%;
