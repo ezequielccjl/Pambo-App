@@ -7,34 +7,61 @@ import nnumeros from '../imgs/nuestros-numeros.jpeg'
 
 export const CardsCont = () => {
 
+    let positionCards;
+
+    const scrollHandler = () => {
+        
+        console.log(window.scrollY)
+
+        if(window.scrollY>positionCards){
+            const counters = document.querySelectorAll('.num-card');
+            const speed = 5000; // The lower the slower
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    
+                    // Lower inc to slow and higher to slow
+                    const inc = target / speed;
+
+                    // console.log(inc);
+                    // console.log(count);
+
+                    // Check if target is reached
+                    if (count < target) {
+                        // Add inc to count and output in counter
+                        counter.innerText = Math.ceil(count + inc);
+                        // Call function every ms
+                        setTimeout(updateCount, 100);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
+        }
+    }
+
+    const calcularScroll = () => {
+        positionCards = document.querySelector(".trigger_cont").offsetTop
+    }
+
     useEffect(()=>{
-        const counters = document.querySelectorAll('.num-card');
-        const speed = 400; // The lower the slower
+        
+        window.addEventListener('scroll', scrollHandler)
+        window.addEventListener('resize', calcularScroll)
 
-        counters.forEach(counter => {
-            const updateCount = () => {
-                const target = +counter.getAttribute('data-target');
-                const count = +counter.innerText;
-                
-                // Lower inc to slow and higher to slow
-                const inc = target / speed;
+        positionCards = document.querySelector(".trigger_cont").offsetTop
+        
+        console.log(document.querySelector(".trigger_cont").offsetTop)
 
-                // console.log(inc);
-                // console.log(count);
+        return ()=>{
+            window.removeEventListener('resize', calcularScroll)
+            window.removeEventListener('scroll', scrollHandler)
+        }
 
-                // Check if target is reached
-                if (count < target) {
-                    // Add inc to count and output in counter
-                    counter.innerText = Math.ceil(count + inc);
-                    // Call function every ms
-                    setTimeout(updateCount, 1);
-                } else {
-                    counter.innerText = target;
-                }
-            };
-
-            updateCount();
-        });
     }, [])
 
 
@@ -54,7 +81,7 @@ export const CardsCont = () => {
                     <div className="cont-card-num cont_card_dos">
                         <div className="tarjeta-num">
                             <img src={perrito1} alt="perrito1" className="img_curso"></img>
-                            <div className="num-card" data-target="69">0</div>
+                            <div className="num-card" data-target="72">0</div>
                             <div className="titulo-card">Perros educados</div>
                         </div>
                     </div>
@@ -71,6 +98,7 @@ export const CardsCont = () => {
             <div className="col-xl-4 col-md-4 col-sm-12 cont_img_num">
                 <img src={nnumeros} alt="nnumeros" className="img_num"></img>
             </div>
+            <div className="trigger_cont"></div>
         </div>
     )
 }
