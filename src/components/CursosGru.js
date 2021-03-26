@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/cursos.css'
-import foto from '../imgs/perrito-curso2.jpeg'
+import foto from '../imgs/perrito-curso2.jpg'
 
 export const CursosGru = () => {
     return(

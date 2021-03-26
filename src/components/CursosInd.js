@@ -2,7 +2,7 @@ import React from 'react'
 import {Footer} from './Footer'
 import '../css/cursos.css'
 
-import foto from '../imgs/perrito-curso1.jpeg'
+import foto from '../imgs/perrito-curso1.jpg'
 
 export const CursosInd = ({handlerPintarCurso}) => {
     return(

@@ -1,6 +1,5 @@
 import React from 'react'
 import {listaTienda} from './ProductosJSON'
-import {Footer} from './Footer'
 
 import '../css/tienda.css'
 
@@ -33,8 +32,6 @@ export const Tienda = () => {
                 }
                 </div>
             </div>
-
-            <Footer />
 
         </section>
     )

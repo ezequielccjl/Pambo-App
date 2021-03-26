@@ -1,4 +1,5 @@
 import React from 'react'
+import foto from '../imgs/perrito-deporte.png'
 
 export const Deportes = () => {
     return(
@@ -44,8 +45,8 @@ export const Deportes = () => {
                     </div>
                 </div>
 
-                <div className="cont_info_curso col-xl-3 col-md-3 col-sm-12">
-
+                <div className="cont_img_curso col-xl-5 col-md-5 col-sm-12">
+                    <img className="foto_curso" src={foto} alt="fotoperrito"></img>
                 </div>
             </div>
         </div>

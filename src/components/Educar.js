@@ -1,5 +1,5 @@
 import React from 'react'
-import {Footer} from './Footer'
+import educar from '../imgs/perrito-educar.jpg'
 
 export const Educar = () => {
     return(
@@ -63,8 +63,8 @@ export const Educar = () => {
                      
                 </div>
 
-                <div className="cont_info_curso col-xl-3 col-md-3 col-sm-12">
-                    
+                <div className="cont_img_curso col-xl-5 col-md-5 col-sm-12">
+                    <img className="foto_curso" src={educar} alt="fotoperrito"></img> 
                 </div>
             </div>
             

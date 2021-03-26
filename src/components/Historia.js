@@ -1,5 +1,5 @@
 import React from 'react'
-import {Footer} from './Footer'
+import foto from '../imgs/perrito-historia.jpg'
 
 export const Historia = () => {
     return(
@@ -40,8 +40,8 @@ export const Historia = () => {
                     </div>
                     
                 </div>
-                <div className="cont_info_curso col-xl-3 col-md-3 col-sm-12">
-                    
+                <div className="cont_img_curso col-xl-5 col-md-5 col-sm-12">
+                    <img className="foto_curso" src={foto} alt="fotoperrito"></img>
                 </div>
             </div>
         
