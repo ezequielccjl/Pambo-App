@@ -29,7 +29,7 @@ nav{
 }
 
 .ul-nav{
-    width: 60%;
+    width: 70%;
     color: white;
     font-family: "Poppins", sans;
     font-size: 0.8rem;
@@ -119,6 +119,18 @@ nav{
 }
 
 /* Clases para Navbar Responsive */
+
+@media only screen and (max-width: 1450px){
+    .ul-nav{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .ul-nav{
+        width: 90%;
+    }
+}
 
 @media only screen and (max-width: 850px) {
 

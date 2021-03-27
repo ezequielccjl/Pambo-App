@@ -10,8 +10,6 @@ export const CardsCont = () => {
     let positionCards;
 
     const scrollHandler = () => {
-        
-        console.log(window.scrollY)
 
         if(window.scrollY>positionCards){
             const counters = document.querySelectorAll('.num-card');

@@ -28,9 +28,15 @@ export const Contacto = () => {
                             Email: <span className="span_info">adiestramientopambo@gmail.com</span>
                         </div>
                         <div className="img_info">
-                            <img src={iconfb} alt="icon-fb"></img>
-                            <img src={iconig} alt="icon-ig"></img>
-                            <img src={iconyt} alt="icon-yt"></img>
+                            <a href="https://www.facebook.com/adiestramientopambo/" target="_blank" rel="noopener noreferrer">
+                                <img src={iconfb} alt="icon-fb"></img>
+                            </a>
+                            <a href="https://www.instagram.com/adiestramientopambo/?hl=es" target="_blank" rel="noopener noreferrer">
+                                <img src={iconig} alt="icon-ig"></img>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCYk1r7-L5DGMc48IoPUcH0g" target="_blank" rel="noopener noreferrer">
+                                <img src={iconyt} alt="icon-yt"></img>
+                            </a>
                         </div>
                     </div>
                 </div>

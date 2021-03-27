@@ -3,7 +3,7 @@ import '../css/navbar.css'
 import {NavbarMenu} from './NavbarMenu'
 import {Link} from 'react-router-dom'
 
-import logo from '../imgs/0_Pambo_Logo.png'
+import logo from '../imgs/0_Pambo__Logo.png'
 
 export const Navbar = () =>{
     

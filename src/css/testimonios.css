@@ -37,10 +37,16 @@
 }
 
 .cont_texto_testi{
+    height: 20rem;
     width: 100%;
     background-color: #ef878e;        
     border-radius: 2rem;
     padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -62,11 +68,20 @@
 }
 
 
+@media (max-width: 1050px){
+    .cont_texto_testi{
+        height: auto;
+    }
+}
+
 @media (max-width: 1000px){
     .cont_mensajes{
         grid-template-columns: 1fr;
     }
 
+    .cont_mensajes .un_testi:last-child{
+        margin-top: 3rem;
+    }
 }
 
 @media (max-width: 850px){
@@ -101,5 +116,9 @@
     .cont_carousel{
         padding-right: 5%;
         padding-left: 5%;
+    }
+
+    .cont_texto_testi{
+        padding: 1.5rem;
     }
 }
