@@ -9,9 +9,14 @@ export const CardsCont = () => {
 
     let positionCards;
 
+    useEffect(()=>{
+        console.log("positionCards: ", positionCards)
+    },[positionCards])
+
     const scrollHandler = () => {
 
         if(window.scrollY>positionCards){
+            console.log("SE ACTIVA EL SCROLLHANDLER")
             const counters = document.querySelectorAll('.num-card');
             const speed = 5000; // The lower the slower
 
@@ -48,10 +53,10 @@ export const CardsCont = () => {
 
     useEffect(()=>{
         
+        positionCards = document.querySelector(".trigger_cont").offsetTop
+        
         window.addEventListener('scroll', scrollHandler)
         window.addEventListener('resize', calcularScroll)
-
-        positionCards = document.querySelector(".trigger_cont").offsetTop
         
         console.log(document.querySelector(".trigger_cont").offsetTop)
 
@@ -84,6 +89,7 @@ export const CardsCont = () => {
                         </div>
                     </div>
                     <div className="cont-card-num cont_card_tres">
+                        <div className="trigger_cont"></div>
                         <div className="tarjeta-num">
                             <img src={perrito2} alt="perrito2" className="img_curso"></img>
                             <div className="num-card" data-target="96">0</div>
@@ -96,7 +102,6 @@ export const CardsCont = () => {
             <div className="col-xl-4 col-md-4 col-sm-12 cont_img_num">
                 <img src={nnumeros} alt="nnumeros" className="img_num"></img>
             </div>
-            <div className="trigger_cont"></div>
         </div>
     )
 }

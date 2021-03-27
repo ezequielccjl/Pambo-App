@@ -21,7 +21,7 @@ export const Landing =  ()=> {
             <ModalLand />
 
             <div className="cont-video">
-            <iframe className="video-land" src="https://www.youtube.com/embed/tdGqTaHSF4o?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe className="video-land" src="https://www.youtube.com/embed/tdGqTaHSF4o?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
 
             <div className="escuela_lider row">
