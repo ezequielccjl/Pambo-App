@@ -10,18 +10,23 @@ export const CardsCont = () => {
     let positionCards;
     let videoHeight, escuelaHeight, educacionHeight, deporteHeight;
 
-    const scrollHandler = () => {
+    const calculoAltura = () => {
         videoHeight = document.getElementsByClassName("cont-video")[0].offsetHeight
         escuelaHeight = document.getElementsByClassName("escuela_lider")[0].offsetHeight
         educacionHeight = document.getElementsByClassName("section_edu")[0].offsetHeight
         deporteHeight = document.getElementsByClassName("section_deportes")[0].offsetHeight
 
-        positionCards = videoHeight + escuelaHeight + educacionHeight+ deporteHeight
+        positionCards = (videoHeight + escuelaHeight + educacionHeight+ deporteHeight) - 300
+    }
 
-        console.log("TOTAL: ", positionCards) 
+    const scrollHandler = () => {
+        
+        calculoAltura()
+
+        //console.log("TOTAL: ", positionCards) 
 
         if(window.scrollY>positionCards){
-            console.log("SE ACTIVA EL SCROLLHANDLER")
+            //console.log("SE ACTIVA EL SCROLLHANDLER")
             const counters = document.querySelectorAll('.num-card');
             const speed = 5000; // The lower the slower
 
@@ -52,21 +57,19 @@ export const CardsCont = () => {
         }
     }
 
-    const calcularScroll = () => {
-        positionCards = document.querySelector(".trigger_cont").offsetTop
-    }
+
 
     useEffect(()=>{
         
         positionCards = document.querySelector(".trigger_cont").offsetTop
         
         window.addEventListener('scroll', scrollHandler)
-        //window.addEventListener('resize', calcularScroll)
+        window.addEventListener('resize', calculoAltura)
         
-        console.log(document.querySelector(".trigger_cont").offsetTop)
+        //console.log(document.querySelector(".trigger_cont").offsetTop)
 
         return ()=>{
-            window.removeEventListener('resize', calcularScroll)
+            window.removeEventListener('resize', calculoAltura)
             window.removeEventListener('scroll', scrollHandler)
         }
 
