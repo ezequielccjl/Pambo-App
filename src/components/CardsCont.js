@@ -8,12 +8,17 @@ import nnumeros from '../imgs/nuestros-numeros.jpeg'
 export const CardsCont = () => {
 
     let positionCards;
-
-    useEffect(()=>{
-        console.log("positionCards: ", positionCards)
-    },[positionCards])
+    let videoHeight, escuelaHeight, educacionHeight, deporteHeight;
 
     const scrollHandler = () => {
+        videoHeight = document.getElementsByClassName("cont-video")[0].offsetHeight
+        escuelaHeight = document.getElementsByClassName("escuela_lider")[0].offsetHeight
+        educacionHeight = document.getElementsByClassName("section_edu")[0].offsetHeight
+        deporteHeight = document.getElementsByClassName("section_deportes")[0].offsetHeight
+
+        positionCards = videoHeight + escuelaHeight + educacionHeight+ deporteHeight
+
+        console.log("TOTAL: ", positionCards) 
 
         if(window.scrollY>positionCards){
             console.log("SE ACTIVA EL SCROLLHANDLER")
@@ -56,7 +61,7 @@ export const CardsCont = () => {
         positionCards = document.querySelector(".trigger_cont").offsetTop
         
         window.addEventListener('scroll', scrollHandler)
-        window.addEventListener('resize', calcularScroll)
+        //window.addEventListener('resize', calcularScroll)
         
         console.log(document.querySelector(".trigger_cont").offsetTop)
 
