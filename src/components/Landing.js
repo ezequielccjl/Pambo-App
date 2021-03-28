@@ -10,7 +10,7 @@ import perrito1 from '../imgs/perrito-1.jpg'
 import perrito2 from '../imgs/perrito-2.jpg'
 import perrito3 from '../imgs/perrito-3.jpg'
 
-import '../css/header.css'
+import '../css/landing.css'
 
 
 export const Landing =  ()=> {
@@ -77,7 +77,7 @@ export const Landing =  ()=> {
                 <div className="titulo_section">Deportes</div>
                 <div className="row">
                     <div className="col-xl-6 col-md-12 col-sm-12">
-                        <iframe className="video-land" src="https://www.youtube.com/embed/QWmVgwO2O7M?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe className="video-land video_habilidades" src="https://www.youtube.com/embed/QWmVgwO2O7M?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <div className="col-xl-6 col-md-12 col-sm-12 cont_habilidades">
                         <div className="titulo_habilidades">Habilidades</div>

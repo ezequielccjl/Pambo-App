@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/contacto.css'
 import {Footer} from './Footer'
+import {Form} from './Form'
 
 //import icon
 import iconfb from '../icons/icon-fb-70.png'
@@ -45,15 +46,7 @@ export const Contacto = () => {
                 </div>
             </div>
 
-            <div className="row_form">
-                <div className="col-6">
-                    
-                </div>
-
-                <div className="col-6">
-                    
-                </div>
-            </div>
+            <Form />
 
 
         </section>

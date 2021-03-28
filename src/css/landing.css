@@ -228,8 +228,16 @@
 
 @media only screen and (max-width: 1460px){
     .cont_habilidades{
-        padding-left: 2rem;
-        padding-right: 2rem;   
+        padding-left: 3rem;
+        padding-right: 3rem;   
+    }
+
+    .video_habilidades{
+        height: 70vh !important;
+    }
+
+    .cont_texto_hab{
+        font-size: .9rem;
     }
 }
 

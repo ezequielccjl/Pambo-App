@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import {useParams} from 'react-router-dom'
 
 import perrito1 from '../imgs/perrito-1.jpg'
 import perrito2 from '../imgs/perrito-2.jpg'
@@ -7,16 +8,21 @@ import nnumeros from '../imgs/nuestros-numeros.jpeg'
 
 export const CardsCont = () => {
 
+    const {params} = useParams()
+
     let positionCards;
     let videoHeight, escuelaHeight, educacionHeight, deporteHeight;
 
     const calculoAltura = () => {
-        videoHeight = document.getElementsByClassName("cont-video")[0].offsetHeight
-        escuelaHeight = document.getElementsByClassName("escuela_lider")[0].offsetHeight
-        educacionHeight = document.getElementsByClassName("section_edu")[0].offsetHeight
-        deporteHeight = document.getElementsByClassName("section_deportes")[0].offsetHeight
 
-        positionCards = (videoHeight + escuelaHeight + educacionHeight+ deporteHeight) - 300
+        if(params===undefined ){
+            videoHeight = document.getElementsByClassName("cont-video")[0].offsetHeight
+            escuelaHeight = document.getElementsByClassName("escuela_lider")[0].offsetHeight
+            educacionHeight = document.getElementsByClassName("section_edu")[0].offsetHeight
+            deporteHeight = document.getElementsByClassName("section_deportes")[0].offsetHeight
+
+            positionCards = (videoHeight + escuelaHeight + educacionHeight+ deporteHeight) - 300
+        }
     }
 
     const scrollHandler = () => {
@@ -57,16 +63,12 @@ export const CardsCont = () => {
         }
     }
 
-
-
     useEffect(()=>{
         
         positionCards = document.querySelector(".trigger_cont").offsetTop
         
         window.addEventListener('scroll', scrollHandler)
         window.addEventListener('resize', calculoAltura)
-        
-        //console.log(document.querySelector(".trigger_cont").offsetTop)
 
         return ()=>{
             window.removeEventListener('resize', calculoAltura)
