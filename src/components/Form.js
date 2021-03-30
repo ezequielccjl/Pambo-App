@@ -51,13 +51,16 @@ export const Form = () => {
             emailjs.sendForm('service_b6psjui', 'template_njjj5ia', e.target, 'user_OrxzRAQKkHbe84z97DTOj')
             .then((result) => {
                 console.log(result.text);
+                alert("Correo enviado correctamente!")
             }, (error) => {
                 console.log(error.text);
+                alert("Error al enviar el correo.")
             });
             
             e.target.reset()
         }else{
             console.log("MAIL INVALIDO PA")
+            alert("Revise los valores ingresados.")
         }
     }
 

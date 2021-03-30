@@ -49,11 +49,11 @@
 }
 
 .validado {
-    border: #5AC055 solid 2px;
+    border: #5AC055 solid 2px !important;
 }
 
 .invalidado {
-    border: rgba(255, 59, 59, 0.623) solid 2px;
+    border: rgba(255, 59, 59, 0.623) solid 2px !important;
 }
 
 .invalidado::after{
