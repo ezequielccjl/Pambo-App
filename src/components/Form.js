@@ -1,26 +1,89 @@
-import React from 'react'
+import React, { useState } from 'react'
+import emailjs, { send } from 'emailjs-com'
 import foto from '../imgs/perrito-form.png'
 
 import '../css/form.css'
 
 export const Form = () => {
+
+    const [mailValido, setMailValido] = useState(false)
+    const [nombreValido, setNombreValido] = useState(false)
+
+    
+    const validacion = () => {
+        var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        
+        const email = document.querySelector("#email")
+        const nombre = document.querySelector("#nombre").value
+        const mensaje = document.querySelector("#nombre").value
+        const inputBox = document.querySelector("._email")
+        const inputBoxNombre = document.querySelector("._nombre")
+
+        if(email.value.match(pattern)){
+            inputBox.classList.add("validado")
+            inputBox.classList.remove("invalidado")
+            setMailValido(true)
+        }else{
+            inputBox.classList.remove("validado")
+            inputBox.classList.add("invalidado")
+            setMailValido(false)
+        }
+
+        if (nombre !== "" && nombre !== " " && nombre !== null && nombre !== undefined) {
+            setNombreValido(true)
+            inputBoxNombre.classList.add("validado")
+            inputBoxNombre.classList.remove("invalidado")
+        }else{
+            setNombreValido(false)
+            inputBoxNombre.classList.remove("validado")
+            inputBoxNombre.classList.add("invalidado")
+        }
+
+    }
+
+    function sendEmail(e) {
+
+        let textarea = document.querySelector("#mensaje").value
+
+        if(mailValido===true && nombreValido===true && textarea!=="" && textarea!==" " && textarea!==undefined){
+            e.preventDefault();
+    
+            emailjs.sendForm('service_b6psjui', 'template_njjj5ia', e.target, 'user_OrxzRAQKkHbe84z97DTOj')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            
+            e.target.reset()
+        }else{
+            console.log("MAIL INVALIDO PA")
+        }
+    }
+
     return(
         <div className="section_form">
             <div className="titulo_form">También podés dejarnos tu mensaje aquí</div>
             <div className="grid_form">
                 <div className="cont_form">
-                    <form className="form">
+                    <form className="form" onSubmit={sendEmail}>
                         <label htmlFor="nombre">Nombre<span className="asterisco">*</span></label>
-                        <input className="input_form" id="nombre"></input>
-                        
+
+                        <div className="input_box _nombre">
+                            <input className="input_form" id="nombre" name="nombre" type="text" onKeyUp={validacion} autoComplete="off"></input>
+                        </div>
+
                         <label htmlFor="email">E-mail de contacto<span className="asterisco">*</span></label>
-                        <input className="input_form" id="email"></input>
-                        
+
+                        <div className="input_box _email">
+                            <input className="input_form" id="email" name="email" type="text" onKeyUp={validacion} autoComplete="off"></input>
+                        </div>
+
                         <label htmlFor="mensaje">Mensaje<span className="asterisco">*</span></label>
-                        <textarea className="input_form" id="mensaje"></textarea>
+                        <textarea className="input_form" id="mensaje" name="mensaje" type="text"></textarea>
                     
                         <div className="cont_btn_form">
-                            <button className="btn_enviar_form">ENVIAR</button>
+                            <input type="submit" className="btn_enviar_form" value="Enviar"></input>
                         </div>
                     </form>
                 </div>

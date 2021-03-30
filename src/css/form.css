@@ -36,6 +36,46 @@
 
 .input_form{
     width: 100%;
+    border: none;
+    outline: none;
+}
+
+.input_box{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .6rem;
+    border: rgba(0, 0, 0, 0.4) 1px solid;
+}
+
+.validado {
+    border: #5AC055 solid 2px;
+}
+
+.invalidado {
+    border: rgba(255, 59, 59, 0.623) solid 2px;
+}
+
+.invalidado::after{
+    content: '';
+    position: absolute;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    background: url('../icons/invalid.png');
+    background-size: cover;
+    z-index: 1000;
+}
+
+.validado::after{
+    content: '';
+    position: absolute;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    background: url('../icons/valid.png');
+    background-size: cover;
+    z-index: 1000;
 }
 
 form >input{
