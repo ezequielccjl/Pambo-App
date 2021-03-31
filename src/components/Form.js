@@ -51,16 +51,28 @@ export const Form = () => {
             emailjs.sendForm('service_b6psjui', 'template_njjj5ia', e.target, 'user_OrxzRAQKkHbe84z97DTOj')
             .then((result) => {
                 console.log(result.text);
-                alert("Correo enviado correctamente!")
+                document.querySelector(".pos_mail").innerHTML = ''
+                document.querySelector(".pos_mail").innerHTML = "Mail enviado correctamente"
+                document.querySelector(".pos_mail").classList.add("pos_success")
+                document.querySelector(".pos_mail").classList.remove("pos_error")
             }, (error) => {
                 console.log(error.text);
-                alert("Error al enviar el correo.")
+                document.querySelector(".pos_mail").innerHTML = ''
+                document.querySelector(".pos_mail").innerHTML = "Error al enviar el mail"
+                document.querySelector(".pos_mail").classList.add("pos_error")
+                document.querySelector(".pos_mail").classList.remove("pos_success")
+
             });
             
             e.target.reset()
         }else{
+            e.preventDefault();
+
             console.log("MAIL INVALIDO PA")
-            alert("Revise los valores ingresados.")
+            document.querySelector(".pos_mail").innerHTML = ''
+            document.querySelector(".pos_mail").innerHTML = "Revise los valores ingresados"
+            document.querySelector(".pos_mail").classList.add("pos_error")
+            document.querySelector(".pos_mail").classList.remove("pos_success")
         }
     }
 
@@ -88,6 +100,7 @@ export const Form = () => {
                         <div className="cont_btn_form">
                             <input type="submit" className="btn_enviar_form" value="Enviar"></input>
                         </div>
+                        <div className="pos_mail pos_error pos_success"></div>
                     </form>
                 </div>
                 <div className="cont_img">

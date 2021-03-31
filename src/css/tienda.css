@@ -23,7 +23,7 @@
 
 .img_prod{
     width: 100%;
-    height: 70%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -35,9 +35,18 @@
 .cont_prod{
     border: 1px rgba(0, 0, 0, 0.2) solid;
     width: 95%;
-    height: 25rem;
+    /*height: 25rem;*/
     justify-self: center;
     margin-bottom: 2rem;
+}
+
+.cont_img_prod{
+    height: 15rem;
+}
+
+.cont_desc_prod{
+    min-height: 5rem;
+    padding-left: 1rem;
 }
 
 .grid_prods{
@@ -49,13 +58,27 @@
     font-weight: 600;
     font-size: 1.2rem;
     margin-top: 1rem;
-    margin-left: 2rem;
     text-align: initial;
 }
 
+.ul_desc_prod{
+    margin-top: 1rem;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.li_desc_prod{
+    text-align: initial;
+    font-size: .8rem;
+}
+
+.icon_li{
+    width: 15px;
+}
+
 @media (max-width: 1400px){
-    .cont_prod{
-        height: 20rem;
+    .cont_img_prod{
+        height: 13rem;
     }
 }
 

@@ -115,6 +115,18 @@ textarea{
     padding-right: 3rem;
 }
 
+.pos_mail{
+    margin-top: 1rem;
+}
+
+.pos_error{
+    color: red;
+}
+
+.pos_success{
+    color: green;
+}
+
 @media (max-width: 1100px){
     .titulo_form{
         font-size: 2rem;

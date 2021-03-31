@@ -22,78 +22,141 @@ export const listaTienda = [
     {
         titulo: "Pretal Sandía",
         img: sandia,
+        detalle: [
+            "Todos los talles"
+        ]
 
     },{
         titulo: "Pretal Frenchi",
-        img: frenchi
+        img: frenchi,
+        detalle: [
+            "Todos los talles"
+        ]
 
     },{
         titulo: "Pretal Rayo",
-        img: rayo
+        img: rayo,
+        detalle: [
+            "Todos los talles"
+        ]
 
     },{
         titulo: "Pretal Hawaii",
-        img: hawaii
+        img: hawaii,
+        detalle: [
+            "Todos los talles"
+        ]
 
     },{
         titulo: "Pretal Hipster Psychodelic",
-        img: hipster
+        img: hipster,
+        detalle: [
+            "Todos los talles"
+        ]
 
     },{
         titulo: "Pretal Palta Rosada",
-        img: palta_rosada
+        img: palta_rosada,
+        detalle: [
+            "Todos los talles"
+        ]
 
     },{
         titulo: "Combo Fucsia",
-        img: com_fucsia
+        img: com_fucsia,
+        detalle: [
+            "Conjunto de Correa y Pretal de diseño exclusivo",
+            "Todos los talles",
+            "Correa de 2 mts"
+        ]
 
     },{
         titulo: "Combo Pizza",
-        img: com_pizza
+        img: com_pizza,
+        detalle: [
+            "Conjunto de Correa y Pretal de diseño exclusivo",
+            "Todos los talles",
+            "Correa de 2 mts"
+        ]
 
     },{
         titulo: "Combo Palta Rosada",
-        img: com_palta_rosada
+        img: com_palta_rosada,
+        detalle: [
+            "Conjunto de Correa y Pretal de diseño exclusivo",
+            "Todos los talles",
+            "Correa de 2 mts"
+        ]
 
     },{
         titulo: "Combo Hawaii",
-        img: com_hawaii
+        img: com_hawaii,
+        detalle: [
+            "Conjunto de Correa y Pretal de diseño exclusivo",
+            "Todos los talles",
+            "Correa de 2 mts"
+        ]
 
     },{
         titulo: "Combo Palta",
-        img: com_palta
+        img: com_palta,
+        detalle: [
+            "Conjunto de Correa y Pretal de diseño exclusivo",
+            "Todos los talles",
+            "Correa de 2 mts"
+        ]
 
     },{
         titulo: "Frisbees",
-        img: frisbee
+        img: frisbee,
+        detalle: [
+            "Se utiliza pigmento no tóxico para no perjudicar la salud de tu mascota y al ser flexible no se astilla con las mordidas de tu perro.",
+            "2 medidas (Small y Standard)"
+        ]
 
     },{
         titulo: "Cinturón de seguridad",
-        img: cinturon
+        img: cinturon,
+        detalle: []
 
     },{
         titulo: "Correa 2,5 metros",
-        img: correa2
+        img: correa2,
+        detalle: []
 
     },{
         titulo: "Correa 5 metros",
-        img: correa5
+        img: correa5,
+        detalle: []
 
     },{
         titulo: "Collar Halti",
-        img: halti
+        img: halti,
+        detalle: []
 
     },{
         titulo: "Alfombra de olfato",
-        img: alfombra1
+        img: alfombra1,
+        detalle: [
+            "Tienen 4 niveles de dificultad, diversión asegurada",
+            "Muchos colores en stock"
+        ]
 
     },{
         titulo: "Alfombra de olfato",
-        img: alfombra2
+        img: alfombra2,
+        detalle: [
+            "Tienen 4 niveles de dificultad, diversión asegurada",
+            "Muchos colores en stock"
+        ]
 
     },{
         titulo: "Alfombra de olfato",
-        img:alfombra3
+        img:alfombra3,
+        detalle: [
+            "Tienen 4 niveles de dificultad, diversión asegurada",
+            "Muchos colores en stock"
+        ]
 
     },
 ]

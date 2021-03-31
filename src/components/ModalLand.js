@@ -36,7 +36,10 @@ export const ModalLand = () => {
             emailjs.sendForm('service_b6psjui', 'template_njjj5ia', e.target, 'user_OrxzRAQKkHbe84z97DTOj')
             .then((result) => {
                 console.log(result.text);
-                alert("Correo enviado correctamente!")
+                document.querySelector(".pos_mail_modal").innerHTML = ''
+                document.querySelector(".pos_mail_modal").innerHTML = "Mail enviado correctamente"
+                document.querySelector(".pos_mail_modal").classList.add("pos_success")
+                document.querySelector(".pos_mail_modal").classList.remove("pos_error")
             }, (error) => {
                 console.log(error.text);
                 alert("Error al enviar el correo.")
@@ -44,8 +47,13 @@ export const ModalLand = () => {
             
             e.target.reset()
         }else{
+            e.preventDefault();
+
             console.log("MAIL INVALIDO PA")
-            alert("Revise los valores ingresados.")
+            document.querySelector(".pos_mail_modal").innerHTML = ''
+            document.querySelector(".pos_mail_modal").innerHTML = "Revise los valores ingresados"
+            document.querySelector(".pos_mail_modal").classList.add("pos_error")
+            document.querySelector(".pos_mail_modal").classList.remove("pos_success")
         }
     }
 
@@ -58,6 +66,7 @@ export const ModalLand = () => {
             <form className="cont_input" onSubmit={sendEmail}>
                 <label htmlFor="input">Email: <span className="asterisco">*</span></label>
                 <input id="input" name="email" className="input_modal" onKeyUp={validacion}></input>
+                <div className="pos_mail_modal"></div>
                 <input name="mensaje" type="hidden" value="Me gustaria recibir Newsletter!"></input>
                 <input name="nombre" type="hidden" value="Cliente"></input>
                 <div className="cont_btn_modal">

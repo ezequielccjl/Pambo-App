@@ -85,6 +85,10 @@
     top: -50vh;
 }
 
+.pos_mail_modal{
+    width: 100%;
+}
+
 @media (max-width: 690px){
     .cont_modal{
         width: 90%;
