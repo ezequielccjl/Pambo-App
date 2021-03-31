@@ -34,7 +34,7 @@ export const CardsCont = () => {
         if(window.scrollY>positionCards){
             //console.log("SE ACTIVA EL SCROLLHANDLER")
             const counters = document.querySelectorAll('.num-card');
-            const speed = 5000; // The lower the slower
+            const speed = 500; // The lower the slower
 
             counters.forEach(counter => {
                 const updateCount = () => {
@@ -42,7 +42,7 @@ export const CardsCont = () => {
                     const count = +counter.innerText;
                     
                     // Lower inc to slow and higher to slow
-                    const inc = target / speed;
+                    //const inc = target / speed;
 
                     // console.log(inc);
                     // console.log(count);
@@ -50,9 +50,9 @@ export const CardsCont = () => {
                     // Check if target is reached
                     if (count < target) {
                         // Add inc to count and output in counter
-                        counter.innerText = Math.ceil(count + inc);
+                        counter.innerText = Math.ceil(count + 1);
                         // Call function every ms
-                        setTimeout(updateCount, 100);
+                        setTimeout(updateCount, 500);
                     } else {
                         counter.innerText = target;
                     }
@@ -87,14 +87,14 @@ export const CardsCont = () => {
                     <div className="cont-card-num cont_card_uno">
                         <div className="tarjeta-num">
                             <img src={perrito3} alt="perrito3" className="img_curso"></img>
-                            <div className="num-card" data-target="68">0</div>
+                            <div className="num-card" data-target="999999">245</div>
                             <div className="titulo-card">Amor y diversión</div>
                         </div>
                     </div>
                     <div className="cont-card-num cont_card_dos">
                         <div className="tarjeta-num">
                             <img src={perrito1} alt="perrito1" className="img_curso"></img>
-                            <div className="num-card" data-target="72">0</div>
+                            <div className="num-card" data-target="999999">376</div>
                             <div className="titulo-card">Perros educados</div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ export const CardsCont = () => {
                         <div className="trigger_cont"></div>
                         <div className="tarjeta-num">
                             <img src={perrito2} alt="perrito2" className="img_curso"></img>
-                            <div className="num-card" data-target="96">0</div>
+                            <div className="num-card" data-target="999999">341</div>
                             <div className="titulo-card">Familias felices</div>
                         </div>
                     </div>

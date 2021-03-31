@@ -23,7 +23,7 @@ export const Contacto = () => {
                             </a>
                         </div>
                         <div>
-                            Teléfono:<span className="span_info">011- 6805-7707</span>
+                            Teléfono:<span className="span_info">1168057707</span>
                         </div>
                         <div className="email_contacto">
                             Email: <span className="span_info">adiestramientopambo@gmail.com</span>

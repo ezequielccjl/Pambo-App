@@ -76,6 +76,34 @@
     width: 15px;
 }
 
+.alfombra{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url("../img-prods/alfombra1.jpeg");
+    }50%{
+        background-image: url("../img-prods/alfombra2.jpg");
+
+    }100%{
+        background-image: url("../img-prods/alfombra3.jpeg");
+
+    }
+}
+
 @media (max-width: 1400px){
     .cont_img_prod{
         height: 13rem;

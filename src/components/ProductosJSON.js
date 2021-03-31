@@ -5,18 +5,18 @@ import hawaii from '../img-prods/hawaii.jpeg'
 import hipster from '../img-prods/hipster.jpeg' 
 import palta_rosada from '../img-prods/palta-rosada.jpeg' 
 import com_fucsia from '../img-prods/com-fucsia.jpeg' 
-import com_pizza from '../img-prods/com-pizza.jpeg' 
-import com_palta_rosada from '../img-prods/com-palta-rosada.jpeg' 
-import com_hawaii from '../img-prods/com-hawaii.jpeg' 
-import com_palta from '../img-prods/com-palta.jpeg' 
+//import com_pizza from '../img-prods/com-pizza.jpeg' 
+//import com_palta_rosada from '../img-prods/com-palta-rosada.jpeg' 
+//import com_hawaii from '../img-prods/com-hawaii.jpeg' 
+//import com_palta from '../img-prods/com-palta.jpeg' 
 import frisbee from '../img-prods/frisbees.jpeg'
 import cinturon from '../img-prods/cinturon-seguridad.jpeg'
 import correa2 from '../img-prods/correa2.jpeg'
 import correa5 from '../img-prods/correa5.jpeg'
 import halti from '../img-prods/halti.jpeg' 
 import alfombra1 from '../img-prods/alfombra1.jpeg' 
-import alfombra2 from '../img-prods/alfombra2.jpeg' 
-import alfombra3 from '../img-prods/alfombra3.jpeg' 
+//import alfombra2 from '../img-prods/alfombra2.jpeg' 
+//import alfombra3 from '../img-prods/alfombra3.jpeg' 
 
 export const listaTienda = [
     {
@@ -62,44 +62,8 @@ export const listaTienda = [
         ]
 
     },{
-        titulo: "Combo Fucsia",
+        titulo: "Pretales Antitirones",
         img: com_fucsia,
-        detalle: [
-            "Conjunto de Correa y Pretal de diseño exclusivo",
-            "Todos los talles",
-            "Correa de 2 mts"
-        ]
-
-    },{
-        titulo: "Combo Pizza",
-        img: com_pizza,
-        detalle: [
-            "Conjunto de Correa y Pretal de diseño exclusivo",
-            "Todos los talles",
-            "Correa de 2 mts"
-        ]
-
-    },{
-        titulo: "Combo Palta Rosada",
-        img: com_palta_rosada,
-        detalle: [
-            "Conjunto de Correa y Pretal de diseño exclusivo",
-            "Todos los talles",
-            "Correa de 2 mts"
-        ]
-
-    },{
-        titulo: "Combo Hawaii",
-        img: com_hawaii,
-        detalle: [
-            "Conjunto de Correa y Pretal de diseño exclusivo",
-            "Todos los talles",
-            "Correa de 2 mts"
-        ]
-
-    },{
-        titulo: "Combo Palta",
-        img: com_palta,
         detalle: [
             "Conjunto de Correa y Pretal de diseño exclusivo",
             "Todos los talles",
@@ -137,26 +101,11 @@ export const listaTienda = [
     },{
         titulo: "Alfombra de olfato",
         img: alfombra1,
+        css: true,
         detalle: [
             "Tienen 4 niveles de dificultad, diversión asegurada",
             "Muchos colores en stock"
         ]
 
-    },{
-        titulo: "Alfombra de olfato",
-        img: alfombra2,
-        detalle: [
-            "Tienen 4 niveles de dificultad, diversión asegurada",
-            "Muchos colores en stock"
-        ]
-
-    },{
-        titulo: "Alfombra de olfato",
-        img:alfombra3,
-        detalle: [
-            "Tienen 4 niveles de dificultad, diversión asegurada",
-            "Muchos colores en stock"
-        ]
-
-    },
+    }
 ]

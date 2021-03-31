@@ -23,8 +23,12 @@ export const Tienda = () => {
                         return(
                             <div className="cont_prod" key={listaTienda.indexOf(item)}>
                                 
-                                <div className="cont_img_prod">
+                                <div className={`cont_img_prod ${item.css===true && "alfombra"}`}>
+                                    
+                                {item.css===undefined && 
                                     <img className="img_prod" src={item.img} alt="img_prod"></img>
+                                }
+                                    
                                 </div>
                                 
                                 <div className="cont_desc_prod">

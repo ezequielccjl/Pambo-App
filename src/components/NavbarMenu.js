@@ -10,7 +10,7 @@ export const NavbarMenu = ({handlerClick}) => {
             <ul className="nav-ul-resp">
                 <li>
                     <Link to="/tienda">    
-                        <div onClick={handlerClick}>TIENDA</div>
+                        <div onClick={handlerClick}>PRODUCTOS</div>
                     </Link>
                 </li>
                 <li>

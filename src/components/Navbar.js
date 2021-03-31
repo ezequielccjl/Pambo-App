@@ -56,7 +56,7 @@ export const Navbar = () =>{
                     <Link to="/tienda">
                         <li>
                             <button className="btn btn-tienda">
-                                Tienda
+                                Productos
                                 <i className="fas fa-shopping-cart"></i>
                             </button>
                         </li>
