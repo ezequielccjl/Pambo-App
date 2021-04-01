@@ -1,5 +1,5 @@
 import React from 'react'
-import foto from '../imgs/perrito-deporte.png'
+import foto from '../imgs/perrito-deporte.jpg'
 
 export const Deportes = () => {
     return(

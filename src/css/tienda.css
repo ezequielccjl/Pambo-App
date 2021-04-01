@@ -41,7 +41,7 @@
 }
 
 .cont_img_prod{
-    height: 15rem;
+    height: 20rem;
 }
 
 .cont_desc_prod{
@@ -119,7 +119,7 @@
 
 @media (max-width: 1400px){
     .cont_img_prod{
-        height: 13rem;
+        height: 18rem;
     }
 }
 

@@ -13,7 +13,9 @@ import frisbee from '../img-prods/frisbees.jpeg'
 import cinturon from '../img-prods/cinturon-seguridad.jpeg'
 import correa2 from '../img-prods/correa2.jpeg'
 import correa5 from '../img-prods/correa5.jpeg'
-import halti from '../img-prods/halti.jpeg' 
+import halti from '../img-prods/halti.jpg' 
+import pelota_olfato from '../img-prods/pelota_olfato.jpg'
+import cubo_olfato from '../img-prods/cubo_olfato.jpeg'
 import alfombra1 from '../img-prods/alfombra1.jpeg' 
 //import alfombra2 from '../img-prods/alfombra2.jpeg' 
 //import alfombra3 from '../img-prods/alfombra3.jpeg' 
@@ -64,11 +66,7 @@ export const listaTienda = [
     },{
         titulo: "Pretales Antitirones",
         img: com_fucsia,
-        detalle: [
-            "Conjunto de Correa y Pretal de diseño exclusivo",
-            "Todos los talles",
-            "Correa de 2 mts"
-        ]
+        detalle: []
 
     },{
         titulo: "Frisbees",
@@ -96,6 +94,16 @@ export const listaTienda = [
     },{
         titulo: "Collar Halti",
         img: halti,
+        detalle: []
+
+    },{
+        titulo: "Cubo de Olfato",
+        img: cubo_olfato,
+        detalle: []
+
+    },{
+        titulo: "Pelota de Olfato",
+        img: pelota_olfato,
         detalle: []
 
     },{

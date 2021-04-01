@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/cursos.css'
-import foto from '../imgs/perrito-curso3.jpeg'
+import foto from '../imgs/perrito-curso3.jpg'
 import huella from '../icons/huella.png'
 
 export const CursosMas = () => {
