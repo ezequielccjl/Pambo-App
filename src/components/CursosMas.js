@@ -9,35 +9,6 @@ export const CursosMas = () => {
             <div className="cont_curso row">
                 <div className="cont_info_curso col-xl-7 col-md-7 col-sm-12">
                     <div className="titulo_curso">Masterclass</div>
-                    
-                    <div className="subtitulo_curso">CURSO GRUPAL DE EDUCACIÓN BÁSICA Y OBEDIENCIA</div>
-
-                    <div className="cont_texto">
-                        <div className="texto">El curso grupal de educación básica para principiantes tiene una duración de 3 meses, y se cursa una vez por semana en Capital Federal. </div>
-                        <div className="texto">Pueden participar cachorros con el plan vacunatorio completo, o perros adultos. </div>
-                        <div className="texto">Trabajamos con adiestramiento positivo y  cognitivo emocional. </div>
-                        <div className="texto">Las clases grupales son 100% presenciales. </div>
-                    </div>
-
-                    <div className="programa">
-                        <div className="titulo_programa">Contenido del programa:</div>
-
-                        <ul className="ul_programa">
-
-                            <li className="item_programa">Sentado</li>
-                            <li className="item_programa">Acostado</li>
-                            <li className="item_programa">Quieto</li>
-                            <li className="item_programa">Acudir al llamado</li>
-                            <li className="item_programa">Orden “No”</li>
-                            <li className="item_programa">Alto en las esquinas</li>
-                            <li className="item_programa">Olfato</li>
-                            <li className="item_programa">Técnicas de correa</li>
-                            <li className="item_programa">Reforzamos la sociabilizacion aprendiendo en equipo (humanos y perros)</li>
-                        </ul>
-
-                    </div>
-
-                    <div className="subtitulo_curso">CURSO GRUPAL PARA EGRESADOS Y PERROS AVANZADOS</div>
 
                     <div className="cont_texto">
                         <div className="texto">Las masterclass son clases grabadas en las cuales vas a tener todas las herramientas para abordar estos objetivos puntuales.</div>
